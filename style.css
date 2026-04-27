@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+}
+
+.tracking-tighter {
+    letter-spacing: -0.05em;
+}
+
+/* スムーススクロール */
+html {
+    scroll-behavior: smooth;
+}
+
+/* ホバー時のアニメーション */
+.group:hover img {
+    transform: scale(1.05);
+}
+
+img {
+    transition: transform 0.8s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* カスタムグラデーション */
+.bg-mesh {
+    background-color: #0a0a0a;
+    background-image: 
+        radial-gradient(at 0% 0%, hsla(0,100%,50%,0.1) 0, transparent 50%), 
+        radial-gradient(at 100% 100%, hsla(220,100%,50%,0.1) 0, transparent 50%);
+}
